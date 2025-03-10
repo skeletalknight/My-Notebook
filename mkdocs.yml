@@ -1,0 +1,115 @@
+site_name: My Docs
+nav:
+  - 🐳主页:
+    - index.md
+  - 人工智能: 
+    - 大模型:
+      - 人工智能\LLM.md
+    - 深度学习: 
+      - 多层感知机: 人工智能\多层感知机.md
+      - 卷积神经网络: 人工智能\卷积神经网络.md
+      - 循环神经网络: 人工智能\循环神经网络.md
+      - Transformer: 人工智能\Transformer.md
+    - 周报记录: 人工智能\周报记录.md
+  - HPC: 
+    - Architecture: HPC\Architecture.md
+    - CUDA: HPC\CUDA.md
+    - Parallelization: 
+      - HPC\Parallelization.md
+      - OpenMP: HPC\OpenMP.md
+      - MPI: HPC\MPI.md
+  - 前后端: 
+    - TS全栈开发:
+      - TypeScript: 前后端开发\Typescript.md
+      - React: 前后端开发\React.md
+      - Tprc: 前后端开发\Tprc.md
+    - 传统前端: 前后端开发\传统前端三件套.md
+    - Go后端: 前后端开发\Go.md
+    - 杂项: 
+      - 登陆鉴权: 前后端开发\登陆鉴权.md
+      - 项目结构: 前后端开发\项目结构.md
+  - 计算机系统:
+    - 计算机网络: 计算机体系\计算机网络.md
+    - 数据库系统:
+      - 计算机体系\数据库概论.md
+      - 关系数据库: 
+        - 计算机体系\关系模型.md
+        - 计算机体系\SQL标准.md
+        - 计算机体系\SQL标准进阶.md
+      - MongoDB:  计算机体系\MongoDB.md
+      - Redis: 计算机体系\Redis.md
+  - 工具箱: 
+    - Shell: 工具箱\Shell.md
+    - Git: 工具箱\Git.md
+    - Makefile: 工具箱\Makefile.md
+    - 检索技巧: 工具箱\检索技巧.md
+    - python调试: 工具箱\python调试.md
+
+
+site_name: 波尼尔的学习记录
+site_url: https://skeletalknight.github.io/My-Notebook/
+repo_name: skeletalknight/My-Notebook
+repo_url: https://github.com/skeletalknight/My-Notebook/
+
+theme:
+  name: material
+  features:
+    - navigation.tabs # 一级导航在横着的导航栏
+    - content.code.annotate # 可以在代码块中增添点击展示的注释，参见 https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#adding-annotations
+    - navigation.tracking # 地址栏中的 URL 会随当前位置变化为对应小节的 URL
+    - navigation.indexes # 将 index 页面直接附到小节名上
+    - navigation.top # 回到顶部按钮
+    # - navigation.sections # 二级导航是粗体
+    # - navigation.expand # 导航默认展开
+    - toc.follow # toc 跟随
+    # - toc.integrate # 文档 toc 集成到总目录中 
+  language: 'zh'
+  palette:
+    primary: black
+    scheme: default
+  font:
+    text: Noto Serif SC # Comic Sans MS # Palatino
+    code: Roboto Mono
+  
+markdown_extensions:
+  - toc:
+      permalink: true # link for each title
+      slugify: !!python/name:pymdownx.slugs.uslugify # enable Unicode link
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - tables
+  - meta
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: underscore
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+  
