@@ -4,13 +4,18 @@ nav:
     - index.md
   - 人工智能: 
     - 大模型:
-      - 人工智能\LLM.md
+      - 大模型\LLM概览.md
+      - 大模型\架构细节.md
+      - 大模型\推理加速.md
+      - 大模型\微调方式.md
+      - 大模型\并行训练.md
+      - 大模型\多模态大模型.md
     - 深度学习: 
-      - 多层感知机: 人工智能\多层感知机.md
-      - 卷积神经网络: 人工智能\卷积神经网络.md
-      - 循环神经网络: 人工智能\循环神经网络.md
-      - Transformer: 人工智能\Transformer.md
-    - 周报记录: 人工智能\周报记录.md
+      - 多层感知机: 深度学习\多层感知机.md
+      - 卷积神经网络: 深度学习\卷积神经网络.md
+      - 循环神经网络: 深度学习\循环神经网络.md
+      - Transformer: 深度学习\Transformer.md
+    - 周报记录: 周报记录.md
   - HPC: 
     - Architecture: HPC\Architecture.md
     - CUDA: HPC\CUDA.md
@@ -29,7 +34,18 @@ nav:
       - 登陆鉴权: 前后端开发\登陆鉴权.md
       - 项目结构: 前后端开发\项目结构.md
   - 计算机系统:
+    - 面向对象编程: 
+      - CS106L:
+        - CS106L\index.md
+        - CS106L\C++ Fundamentals.md
+        - CS106L\Class and Template.md
+        - CS106L\Standard Template Library.md
+        - CS106L\Advanced Features.md
     - 计算机网络: 计算机体系\计算机网络.md
+    - 操作系统:
+      - 操作系统\操作系统.md
+      - 操作系统\并发.md
+      - 操作系统\虚拟化.md
     - 数据库系统:
       - 计算机体系\数据库概论.md
       - 关系数据库: 
@@ -70,7 +86,13 @@ theme:
   font:
     text: Noto Serif SC # Comic Sans MS # Palatino
     code: Roboto Mono
-  
+
+plugins:
+  - replace:
+      replacements:
+        "post_content/": "/My-Notebook/post_content/"
+        "{align}" : "{aligned}"
+
 markdown_extensions:
   - toc:
       permalink: true # link for each title
@@ -112,4 +134,10 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
-  
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css

@@ -22,11 +22,11 @@ Git是目前世界上最为广泛应用的分布式版本控制系统，学习gi
 
 
 
-![v2-0b61abaf4069dc04003e85e7499d42b0_720w](/post_content/Git/v2-0b61abaf4069dc04003e85e7499d42b0_720w.png)
+![v2-0b61abaf4069dc04003e85e7499d42b0_720w](post_content/Git/v2-0b61abaf4069dc04003e85e7499d42b0_720w.png)
 
 在github上输入`ssh -T git@github.com `登陆github
 
-![Snipaste_2024-04-02_14-22-26](/post_content/Git/Snipaste_2024-04-02_14-22-26.png)
+![Snipaste_2024-04-02_14-22-26](post_content/Git/Snipaste_2024-04-02_14-22-26.png)
 
 ### 链接仓库与开发：
 
@@ -79,7 +79,7 @@ Git是目前世界上最为广泛应用的分布式版本控制系统，学习gi
 
 在使用add指令暂存的时候，我们可能遇到如下的报错。
 
-#### ![Snipaste_2024-04-02_15-07-00](/post_content/Git/Snipaste_2024-04-02_15-07-00.png)
+![Snipaste_2024-04-02_15-07-00](post_content/Git/Snipaste_2024-04-02_15-07-00.png)
 
 这是因为换行符的在不同平台并不统一的原因。
 
@@ -163,8 +163,7 @@ Git是目前世界上最为广泛应用的分布式版本控制系统，学习gi
 
 ##### 分支本质——<u>指针的切换</u>：
 
-<img src="/post_content/Git/Snipaste_2024-04-02_20-53-58.png"
-style="float: left;"
+<img src="post_content/Git/Snipaste_2024-04-02_20-53-58.png"
 alt="Snipaste_2024-04-02_20-53-58"  />
 
 新的分支会产生新的指针，之后最简单的合并方式就是将dev指针用master覆盖。
@@ -219,7 +218,7 @@ alt="Snipaste_2024-04-02_20-53-58"  />
 
 
 
-<img src="/post_content/Git/Snipaste_2024-04-02_21-22-01-17120684018941.png" alt="Snipaste_2024-04-02_21-22-01" style="float: left;" />
+<img src="post_content/Git/Snipaste_2024-04-02_21-22-01-17120684018941.png"  style="float: left;" />
 
 
 
